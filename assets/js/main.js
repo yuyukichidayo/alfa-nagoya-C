@@ -3,7 +3,6 @@ let userName = "";
 btn.addEventListener("click", e => {
     userName = document.getElementById("nameInput").value;
     userNameGet(userName)
-    heavyAlert()
 
 });
 
@@ -13,7 +12,7 @@ function userNameGet(userName) {
     } else {
         document.cookie = "nameData=" + userName;
         console.log(document.cookie)
-
+        heavyAlert()
     }
 
 };
