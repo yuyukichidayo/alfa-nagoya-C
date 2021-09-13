@@ -1,386 +1,61 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="ja"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="ja" prefix="og: http://ogp.me/ns#">
-<!--<![endif]-->
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>リアル脱出ゲーム×名探偵コナン「チョコレート殺人事件」</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=640">
-
-    <meta property="og:title" content="リアル脱出ゲーム×名探偵コナン「チョコレート殺人事件」" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://realdgame.jp/ajito/conan_chocolate/" />
-    <meta property="og:image" content="http://realdgame.jp/ajito/conan_chocolate/images/ogImg.png" />
-    <meta property="og:description" content="名探偵コナンや毛利小五郎・少年探偵団達と協力し、大阪・心斎橋で起きた連続殺人事件の犯人をつきとめてください。キットに記された謎を解き明かし事件の手がかりを掴む「聞き込み編」殺人現場を再現した部屋で密室のトリックを解明する「現場検証編」犯人のアジトに仕掛けられた罠を解除し、閉ざされた扉の鍵を手に入れる「脱出編」それぞれのゲーム単体でも楽しんで頂けますが、3つのゲームを通して、事件の裏に隠された真相に迫ることができます。"
-    />
-    <meta property="og:site_name" content="" />
-    <meta property="fb:admins" content="" />
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="">
-
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/utility.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.0/flickity.min.css" />
-    <!--<link rel="stylesheet" href="css/vendor/jquery.fancybox-1.3.4.css"> -->
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <!-- JavaScriptの読み込み -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.0/flickity.pkgd.min.js"></script>
-</head>
-
-<body>
-    <!-- Google Tag Manager -->
-    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K3K63C"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                '//www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-K3K63C');
-    </script>
-    <!-- End Google Tag Manager -->
-    <!-- Facebook SDK -->
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-    <div class="wrapper">
-        <div class="visual">
-            <img class="visual__main" src="images/top_visual.jpg" alt="リアル脱出ゲーム×名探偵コナン チョコレート殺人事件">
-        </div>
-        <div class="leadArea leadArea--above unut-top">
-            <div class="unit__inner">
-                <div class="leadArea__txt2"><img src="images/lead_descr2.png" alt="アジトオブスクラップ下北沢ナゾビルで起きた連続殺人事件 コナン達と共に3つの事件を解決し、事件の裏に隠された真実を解き明かせ!!"></div>
-                <ul class="top-event main-carousel">
-                    <li class="top-event__item top-event__item-kikikomi slide slide1">
-                        <ul class="tag-venue tag-venue--kikikomi top-event__item__venue">
-                            <li>会場</li>
-                            <li>東京ミステリーサーカス</li>
-                        </ul>
-                        <div>
-                            <img src="images/lead-kikikomi.svg" class="top-event__lead" alt="">
-                            <img src="images/tag-kikikomi.svg" class="top-event__tag" alt="">
-                        </div>
-                        <ul class="top-event__btn">
-                            <li>
-                                <a href="event/kikikomi.html"><img src="images/btn-more_def.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="event/kikikomi.html#ticket"><img src="images/btn-ticket_def.svg" alt=""></a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="top-event__item top-event__item-inspection slide slide2">
-                        <ul class="tag-venue tag-venue--inspection top-event__item__venue">
-                            <li>会場</li>
-                            <li>リアル脱出ゲーム下北沢店</li>
-                        </ul>
-                        <div>
-                            <img src="images/lead-inspection.svg" class="top-event__lead" alt="">
-                            <img src="images/tag-inspection.svg" class="top-event__tag" alt="">
-                        </div>
-                        <ul class="top-event__btn">
-                            <li>
-                                <a href="event/inspection.html"><img src="images/btn-more_def.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="event/inspection.html#ticket"><img src="images/btn-ticket_def.svg" alt=""></a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="top-event__item top-event__item-escape slide slide3">
-                        <ul class="tag-venue tag-venue--escape top-event__item__venue">
-                            <li>会場</li>
-                            <li>リアル脱出ゲーム下北沢店</li>
-                        </ul>
-                        <div>
-                            <img src="images/lead-escape.svg" class="top-event__lead" alt="">
-                            <img src="images/tag-escape.svg" class="top-event__tag" alt="">
-                        </div>
-                        <ul class="top-event__btn">
-                            <li>
-                                <a href="event/escape.html"><img src="images/btn-more_def.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="event/escape.html#ticket"><img src="images/btn-ticket_def.svg" alt=""></a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <section class="unit top__challenge" style="padding: 3.5% 0;" id="renshu">
-            <div class="top__challenge__cont">
-                <div class="clearfix" style="position: absolute; left: 0; right: 0; bottom: 25px; width: 620px; margin: auto;">
-                    <div class="top__challengeLink">
-                        <a href="./challenge1/"><img src="images/top_challenge_kikikomi_def.png" alt="聞き込み編"></a>
-                    </div>
-                    <div class="top__challengeLink">
-                        <a href="./challenge2/"><img src="images/top_challenge_inspection_def.png" alt="現場検証編"></a>
-                    </div>
-                    <div class="top__challengeLink">
-                        <a href="./challenge3/"><img src="images/top_challenge_escape_def.png" alt="脱出編"></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="unit top__news">
-            <div class="unit__inner">
-                <h2 class="primaryH primaryH--highlight"><img src="images/h_news.png" alt="NEWS"></h2>
-                <dl class="top__news__list">
-                    <dt>2017.9/13</dt>
-                    <dd>「聞き込み編」の謎解きキット <a href="https://goods.scrapmagazine.com/detail.html?name=chocolate_conan" target="_blank">SCRAP GOODS SHOP(通販)</a>での販売が開始！</dd>
-                </dl>
-
-                <div>
-                    <ul>
-                        <li>
-                            <a href="https://realdgame.jp/conanonline/" target="_blank"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="unit__inner">
-                <div class="top__recommend">
-                    <img src="images/h_recommend.svg" alt="" class="top__title">
-                    <ul class="top__recommend-item">
-                        <li>
-                            <a href="https://realdgame.jp/conanonline/" target="_blank">
-                                <img src="images/banner-conan01.jpg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://realdgame.jp/conan2020/" target="_blank">
-                                <img src="images/banner-conan02.jpg" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="unit top__aboutConan">
-            <div class="unit__inner">
-                <h2 class="primaryH"><img src="images/h_aboutConan.png" alt="名探偵コナンとは？"></h2>
-                <p>週刊少年サンデーにて好評連載中の推理コミックの決定版!! 　主人公・江戸川コナンは、見た目は小学１年生だが、その正体は高校生探偵・工藤新一!! 　黒ずくめの男達に毒薬を飲まされ、体が縮んでしまったのだ。コナンは父親が探偵事務所をやっている幼馴染の蘭の家に転がり込み、黒ずくめの組織を追う!! 待ち受けるのは数々の難事件、たったひとつの真実求め、コナンは謎に立ち向かう!!
-                </p>
-                <div class="top__aboutConan__img">
-                    <a target="_blank" href="http://www.ytv.co.jp/conan/index.html"><img src="images/top_conanImg_2.png"></a>
-                    <br>
-                    <p>YTV・NTV系列でアニメ「名探偵コナン」を
-                        <br>毎週土曜18:00より放送中 ※一部地域を除く</p>
-                </div>
-                <div class="top__aboutConan__img">
-                    <a target="_blank" href="http://www.conan-portal.com/"><img src="images/top_conanImg_3.png"></a>
-                    <br>
-                    <p>名探偵コナンポータルサイト</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="aboutReald" class="unit top__aboutReald">
-            <div class="unit__inner">
-                <h2 class="primaryH"><img src="images/h_aboutReald.png" alt="リアル脱出ゲームとは？"></h2>
-                <p>マンションの1室や廃校、廃病院、そして東京ドームや六本木ヒルズなど、様々な場所で開催されている体験型ゲーム・イベント。<br> 2007年に初開催して以降、現在までで820万人以上を動員している。
-                    <br> 日本のみならず上海、台湾、シンガポールやサンフランシスコなど全世界で参加者を興奮の渦に巻き込み、男女問わずあらゆる世代を取り込む、今大注目の体験型エンターテインメントである。
-                </p>
-                <p style="margin-bottom: 30px;">
-                    <iframe class="top__yt" src="https://www.youtube.com/embed/oqIkKTZPXKU?rel=0" frameborder="0" allowfullscreen></iframe>
-                </p>
-                <div class="generalBtn">
-                    <a target="_blank" href="http://realdgame.jp/"><img src="images/btn_goReald_def.png" alt="リアル脱出ゲームオフィシャルサイト"></a>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer unit">
-            <div class="unit__inner">
-                <div class="pagetop pagetop--footer"><a href="#"><i class="fa fa-angle-up fa-2x"></i></a></div>
-                <section class="footer__contact">
-                    <h4 class="footer__contact__h">お問い合わせ先</h4>
-                    <div class="footer__contact-content">
-                        <div class="footer__contact-title">聞き込み編</div>
-                        <p>東京ミステリーサーカス<br> TEL <a href="tel:03-6273-8641">03-6273-8641</a><br> （平日11:30~21:00・土日祝9:30~21:00）
-                            <br> 休業日
-                            <br> 詳しくは店舗ページをご覧ください。
-                        </p>
-                        <a href="https://mysterycircus.jp/" target="_blank" class="btn-round2 footer__contact-button">東京ミステリーサーカス</a>
-                    </div>
-                    <div class="footer__contact-content">
-                        <div class="footer__contact-title">現場検証編・脱出編</div>
-                        <p>リアル脱出ゲーム下北沢店<br> TEL <a href="tel:03-5432-9805">03-5432-9805</a><br> （平日12:30〜21:00・土日祝10:00〜21:00）
-                            <br> 休業日
-                            <br> 詳しくは店舗ページをご覧ください。
-                        </p>
-                        <a href="https://realdgame.jp/ajito/shimokitazawa/" target="_blank" class="btn-round2 footer__contact-button">リアル脱出ゲーム下北沢店</a>
-                    </div>
-                </section>
-                <div class="footer__obj">
-                    <a target="_blank" href="http://realdgame.jp/"><img src="images/logo-reald.svg" alt="リアル脱出ゲーム"></a>
-                </div>
-                <div class="footer__obj footer__descr">このゲーム・イベントでは、実際にあなたが謎を解いて、脱出に挑戦します。</div>
-                <div class="footer__obj footer__credit">主催：SCRAP 協力：小学館 ©青山剛昌／小学館<br> 「リアル脱出ゲーム」は株式会社SCRAPの登録商標です。
-                </div>
-            </div>
-        </footer>
-
-        <a id="drawerBtn" class="menuBtn drawer"><img src="images/menu_def.jpg" alt="メニュー"></a>
-    </div>
-
-    <div class="menu overlay overlay-contentpush">
-        <div class="menu__logo"><img src="images/menu_logo.png" alt="チョコレート殺人事件"></div>
-        <nav class="overlay__nav menu__nav">
-            <ul class="menu__list">
-                <li class="menu__list__item"><a class="overlay__nav__item" href="index.html">TOP</a></li>
-                <li class="menu__list__item"><a class="overlay__nav__item" href="./event/">イベント概要・チケット</a></li>
-                <li class="menu__list-event__item01">
-                    <a href="./event/">
-                    </a>
-                </li>
-                <li>
-                    <ul class="menu__list-event">
-                        <li class="menu__list-event__item menu__list-event__item02">
-                            <a href="event/kikikomi.html"><img src="images/img-menu02.png" alt=""></a>
-                        </li>
-                        <li class="menu__list-event__item menu__list-event__item03">
-                            <a href="event/inspection.html"><img src="images/img-menu03.png" alt=""></a>
-                        </li>
-                        <li class="menu__list-event__item menu__list-event__item04">
-                            <a href="event/escape.html"><img src="images/img-menu04.png" alt=""></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu__list__item"><a class="overlay__nav__item" href="./faq/">よくある質問</a></li>
-                <li class="menu__list__item"><a class="overlay__nav__item" href="./access-open.html">アクセス・営業時間</a></li>
-                <li class="menu__list__item"><a class="overlay__nav__item" href="./goods.html">グッズ</a></li>
-                <li class="menu__list__item"><a class="overlay__nav__item" href="#renshu">練習問題</a></li>
-            </ul>
-        </nav>
-        <button type="button" class="menu__close overlay-close">Close</button>
-    </div>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')
-    </script>
-    <script src="js/vendor/jquery.easing.1.3.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <!--<script src="js/vendor/jquery.fancybox-1.3.4.js"></script> -->
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-6950245-19', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <script>
-        var flkty = new Flickity('.main-carousel', {
-            wrapAround: true,
-            pageDots: false
-        });
-    </script>
-</body>
-
-</html>
-
-
-<!-- <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>封鎖された家庭科室からの脱出 │ Project N</title>
-  <link rel="stylesheet" href="assets/css/normalize.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>グレイグーからの挑戦 │ Project N</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  <svg width="0" height="0" class="hidden">
+    <svg width="0" height="0" class="hidden">
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.47 24.94" id="arrow" class="arrow_svg">
       <title>arrow</title>
       <polygon points="0 24.94 0 19.66 7.35 12.47 0 5.92 0 0 12.47 12.47 0 24.94"/>
     </symbol>
   </svg>
-  <header class="header">
-    <div class="container">
-      <div class="header__logo"><img src="assets/images/logo.svg" alt="チームロゴ"></div>
-      <div class="header__name">N・S高生制作サイト</div>
-    </div>
-  </header>
-  <main class="main index-page">
-    タイトルエリア　ここから
-    <h1 class="main-title"><img src="assets/images/top-image.png" alt="Presented by SCRAP×N・S高リアル脱出ゲーム制作PJ 封鎖された家庭科室からの脱出"></h1>
-    タイトルエリア　ここまで
-    <section class="section section--story">
-      <div class="container">
-        <h2 class="section-title section-title--keycolor section-title--story">ストーリー</h2>
-        <div class="story">
-          <p class="text-center">郊外にある、歴史も古い小学校・・・<br>
-            いつの間にか、放課後に家庭科室から奇妙な叫び声が聞こえてくるという噂が流れ始めた。<br>
-            調査したが、噂の出どころはわからない。<br>
-            そんな矢先、某有名預言者ノストラエヌスが、「このままだと家庭科室が原因で、学校が滅びるだろう」と予言。<br>
-            生徒に人気のS先生が一人で調査に入ったが、いつまでも帰ってこない。<br>
-            不思議に思った生徒会長の君は、副会長の伊計島太郎と茨つくはの<br>
-            ２名を連れて家庭科室の前に来たが、ドアが開かない。<br>
-            さらにドアの前に画面とキーボードが。どうやら暗号を入力しろということらしい。</p>
-          <div class="story__note__outer bg-color--gray">
-            <ul class="story__note">
-              <li>今、これを読んだ生徒会メンバー以外を呼んではいけない</li>
-              <li>30分を超えるとS先生は出てこられない</li>
-            </ul>
-          </div>
-          <p class="text-center">いつの間にか、タイマーが起動した。29:58、29:57・・・急がなきゃ。<br>
-            まずはこの暗号を解かなくては！</p>
+    <header class="header">
+        <div class="container">
+            <div class="header__logo"><img src="assets/images/teamLogo.png" alt="チームロゴ"></div>
+            <div class="header__name">N・S高生制作サイト</div>
         </div>
-      </div>
-    </section>
-    <section class="section bg-color--gray">
-      <div class="container">
-        <h2 class="section-title">ゲーム開始前の準備</h2>
-        <p class="font-eng text-center">Are you ready for game?</p>
-        
+    </header>
+    <main class="main index-page">
+        <!-- タイトルエリア　ここから -->
+        <h1 class="main-title"><img src="assets/images/TitleVisual.png" alt="Presented by SCRAP×N・S高リアル脱出ゲーム制作PJ 封鎖された家庭科室からの脱出"></h1>
+        <!-- タイトルエリア　ここまで -->
+        <section class="section section--story">
+            <div class="container">
+                <h2 class="section-title section-title--keycolor section-title--story">ストーリー</h2>
+                <div class="story">
+                    <p class="text-center">郊外にある、歴史も古い小学校・・・<br> いつの間にか、放課後に家庭科室から奇妙な叫び声が聞こえてくるという噂が流れ始めた。
+                        <br> 調査したが、噂の出どころはわからない。
+                        <br> そんな矢先、某有名預言者ノストラエヌスが、「このままだと家庭科室が原因で、学校が滅びるだろう」と予言。
+                        <br> 生徒に人気のS先生が一人で調査に入ったが、いつまでも帰ってこない。
+                        <br> 不思議に思った生徒会長の君は、副会長の伊計島太郎と茨つくはの
+                        <br> ２名を連れて家庭科室の前に来たが、ドアが開かない。
+                        <br> さらにドアの前に画面とキーボードが。どうやら暗号を入力しろということらしい。
+                    </p>
+                    <div class="story__note__outer bg-color--gray">
+                        <ul class="story__note">
+                            <li>今、これを読んだ生徒会メンバー以外を呼んではいけない</li>
+                            <li>30分を超えるとS先生は出てこられない</li>
+                        </ul>
+                    </div>
+                    <p class="text-center">いつの間にか、タイマーが起動した。29:58、29:57・・・急がなきゃ。<br> まずはこの暗号を解かなくては！
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section bg-color--gray">
+            <div class="container">
+                <h2 class="section-title">ゲーム開始前の準備</h2>
+                <p class="font-eng text-center">Are you ready for game?</p>
+                <!--
           class名"row"内のclass名"column"が横並びになります。
           改行する場合は以下のように追加してください。
           <div class="row">
@@ -388,72 +63,73 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               ～ 内容 ～
             </div>
           </div>
-       
-        <div class="row">
-          <div class="column">
-            <div class="card">
-              <h3 class="card__title">遊ぶ日時を決めよう！</h3>
-              <p class="card__content">前後の説明、解説をあわせ、想定所要時間は100分〜120分です。途中で中断することもできますが、お時間に余裕があるときにご参加ください。</p>
+        -->
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <h3 class="card__title">遊ぶ日時を決めよう！</h3>
+                            <p class="card__content">前後の説明、解説をあわせ、想定所要時間は30分〜45分です。途中で中断することもできますが、お時間に余裕があるときにご参加ください。</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <h3 class="card__title">紙とペンを用意しよう！</h3>
+                            <p class="card__content">メモをとるための紙と筆記用具をお手元にご準備ください。</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <h3 class="card__title">ブラウザのCookieとキャッシュを<br>削除しよう！</h3>
+                            <p class="card__content">エラーが起きる原因となる恐れがありますので、必ずCookieとキャッシュを削除してからプレイを開始するようにしてください。</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <h3 class="card__title">紙とペンを用意しよう！</h3>
-              <p class="card__content">メモをとるための紙と筆記用具をお手元にご準備ください。</p>
+        </section>
+        <section class="section bg-color--keycolor">
+            <div class="container">
+                <h2 class="section-title">複数人での遊び方</h2>
+                <p class="font-eng text-center">Playing games with multiple players</p>
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <h3 class="card__title">コミュニケーションツール<br>を用意！</h3>
+                            <p class="card__content">例：Zoom、LINE通話など<br> カメラはオフにしたままでも参加は可能です。
+                                <br> ただ、離れたところにいる仲間と同じ会場で謎解きをしている気持ちになれるので、カメラをオンにしてみんなでわいわいプレイをすることをお勧めします。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <h3 class="card__title">イヤホンを使おう！</h3>
+                            <p class="card__content">本ゲームでは、登場人物が会話する動画を見ながら謎解きをします。<br> 動画を見るときにイヤホンを使うと、動画の再生中も仲間と会話をしながらプレイができます。
+                                <br> ※イヤホンを使用しない場合は、音声をマイクが拾ってしまわないように、動画の再生中は通話ツールのミュート機能をご利用ください。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <h3 class="card__title">情報共有はしっかりと！</h3>
+                            <p class="card__content">遠くにいる仲間と足並みを揃えて遊びましょう。<br> 動画で気になったところ、解けた謎の答えや思いついたことはなんでも共有しましょう！
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <h3 class="card__title">ブラウザのCookieとキャッシュを<br>削除しよう！</h3>
-              <p class="card__content">エラーが起きる原因となる恐れがありますので、必ずCookieとキャッシュを削除してからプレイを開始するようにしてください。</p>
+        </section>
+        <section class="section">
+            <div class="container">
+                <a class="btn" href="main.html">準備OK？では、ゲームスタート！！！<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></a>
             </div>
-          </div>
+        </section>
+    </main>
+    <footer class="footer section bg-color--gray">
+        <div class="container">
+            <p class="text-center">授業主催： N・S高<br>協力：株式会社SCRAP<br>企画制作：N・S高生</p>
+            <p class="text-center">「リアル脱出ゲーム」は株式会社SCRAPの登録商標です。</p>
+            <p class="text-center">株式会社SCRAPとN・S高で実施した授業「リアル脱出ゲームの作り方」の一環で<br>生徒が制作したものであり、SCRAPが主催/公認するものではありません。</p>
         </div>
-      </div>
-    </section>
-    <section class="section bg-color--keycolor">
-      <div class="container">
-        <h2 class="section-title">複数人での遊び方</h2>
-        <p class="font-eng text-center">Playing games with multiple players</p>
-        <div class="row">
-          <div class="column">
-            <div class="card">
-              <h3 class="card__title">コミュニケーションツール<br>を用意！</h3>
-              <p class="card__content">例：Zoom、LINE通話など<br>
-                カメラはオフにしたままでも参加は可能です。<br>
-                ただ、離れたところにいる仲間と同じ会場で謎解きをしている気持ちになれるので、カメラをオンにしてみんなでわいわいプレイをすることをお勧めします。</p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <h3 class="card__title">イヤホンを使おう！</h3>
-              <p class="card__content">本ゲームでは、登場人物が会話する動画を見ながら謎解きをします。<br>
-                動画を見るときにイヤホンを使うと、動画の再生中も仲間と会話をしながらプレイができます。<br>
-                ※イヤホンを使用しない場合は、音声をマイクが拾ってしまわないように、動画の再生中は通話ツールのミュート機能をご利用ください。</p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <h3 class="card__title">情報共有はしっかりと！</h3>
-              <p class="card__content">遠くにいる仲間と足並みを揃えて遊びましょう。<br>
-                動画で気になったところ、解けた謎の答えや思いついたことはなんでも共有しましょう！</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <a class="btn" href="main.html">準備OK？では、ゲームスタート！！！<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></a>
-      </div>
-    </section>
-  </main>
-  <footer class="footer section bg-color--gray">
-    <div class="container">
-      <p class="text-center">授業主催： N・S高<br>協力：株式会社SCRAP<br>企画制作：N・S高生</p>
-      <p class="text-center">「リアル脱出ゲーム」は株式会社SCRAPの登録商標です。</p>
-      <p class="text-center">株式会社SCRAPとN・S高で実施した授業「リアル脱出ゲームの作り方」の一環で<br>生徒が制作したものであり、SCRAPが主催/公認するものではありません。</p>
-    </div>
-  </footer>
+    </footer>
 </body>
-</html> -->
+
+</html>

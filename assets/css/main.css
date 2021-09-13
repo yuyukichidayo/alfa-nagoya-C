@@ -1,0 +1,71 @@
+input {
+    border: 2px solid #0a0;
+    /* 枠線 */
+    border-radius: 0.67em;
+    /* 角丸 */
+    padding: 0.5em;
+    /* 内側の余白量 */
+    background-color: snow;
+    /* 背景色 */
+    width: 100%;
+    /* 横幅いっぱいにする */
+    box-sizing: border-box;
+    /* ※これがないと横にはみ出る */
+    height: 120px;
+    /* 高さ */
+    font-size: 1em;
+    /* 文字サイズ */
+    line-height: 1.2;
+    /* 行の高さ */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.parent {
+    position: relative;
+    height: 200px;
+}
+
+input:focus {
+    border-color: skyblue;
+    /* 枠線の色 */
+    background-color: #ffc;
+    /* 背景色 */
+    outline: none;
+    /* ※ブラウザが標準で付加する線を消したいとき */
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.btn--orange,
+button.btn--orange {
+    color: #fff;
+    position: absolute;
+    background-color: #0a0;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn--orange:hover,
+button.btn--orange:hover {
+    color: #fff;
+    background: skyblue;
+}
+
+button.btn--radius {
+    border-radius: 100vh;
+}
