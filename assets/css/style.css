@@ -111,13 +111,13 @@ button {
     left: 0;
     right: 0;
     z-index: 200;
-}
-
-.section--clear.isClear {
+    visibility: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
+
+.section--clear.isClear {}
 
 .container {
     width: 1100px;

@@ -88,7 +88,7 @@ function clickExecution() {
     //8の部分をshineの数にしてください
     if (count > shines.length) {
         //飛ばしたいリンクへ
-        location.href = "https://www.yahoo.co.jp/";
+        location.href = "../STEP4/step4.html";
     }
     count++
     console.log(count)

@@ -23,7 +23,7 @@ function userNameGet(userName) {
     if (userName == "") {
         alert("なまえを入力してね！")
     } else {
-        document.cookie = "nameData=" + userName + ";Max-Age=100";
+        document.cookie = "nameData=" + userName + ";Max-Age=10";
         console.log(document.cookie)
         alert("errorが発生しました。ユーザー情報が悪意のあるユーザーに取得されました。")
         document.body.style.backgroundColor = "rgba(255,0,0,0.5)";
@@ -31,13 +31,13 @@ function userNameGet(userName) {
         setTimeout(heavyAlert2, 1000);
         setTimeout(heavyAlert3, 2000);
         setTimeout(heavyAlertEnd, 3000);
-        setTimeout(link, 6000)
+        setTimeout(link, 5000)
     }
 }
 
 
 function link() {
-    location.href = "STEP1/STEP1-novelstart.html";
+    location.href = "STEP1/step1NovelStart.html";
 
 };
 
