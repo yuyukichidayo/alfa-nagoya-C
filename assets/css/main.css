@@ -23,6 +23,15 @@ input {
     transform: translate(-50%, -50%);
 }
 
+#title {
+    visibility: hidden;
+    color: #0a0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .parent {
     position: relative;
     height: 200px;
@@ -50,6 +59,19 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    width: 1250px;
+    height: 700px;
+}
+
+#nameInput {
+    visibility: hidden;
+}
+
+#btn {
+    visibility: hidden;
+}
+
 .btn--orange,
 button.btn--orange {
     color: #fff;
@@ -70,38 +92,65 @@ button.btn--radius {
     border-radius: 100vh;
 }
 
-.errors1 {
+#error1 {
+    width: 60%;
+    position: absolute;
+    visibility: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.errors2 {
-    top: 20%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-}
-
-.errors3 {
-    top: 90%;
+#error2 {
+    width: 70%;
+    position: absolute;
+    visibility: hidden;
+    top: 30%;
     left: 30%;
     transform: translate(-50%, -50%);
 }
 
-.error4 {
-    top: 80%;
-    left: 50%;
+#error3 {
+    width: 40%;
+    position: absolute;
+    visibility: hidden;
+    top: 30%;
+    left: 40%;
     transform: translate(-50%, -50%);
 }
 
-.error5 {
+#error4 {
+    width: 46%;
+    position: absolute;
+    visibility: hidden;
+    top: 70%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+#error5 {
+    width: 60%;
+    position: absolute;
+    visibility: hidden;
+    top: 58%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+#error6 {
+    width: 80%;
+    visibility: hidden;
     top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 100%;
 }
 
-.error6 {
-    top: 40%;
-    left: 70%;
+#errorEnd {
+    visibility: hidden;
+    width: 1250px;
+    height: 700px;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }

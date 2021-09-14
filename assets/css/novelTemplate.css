@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#terminal {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+html,
+body {
+    min-width: 1350px;
+    max-height: 730px;
+    margin: auto;
+    background-size: cover;
+    width: 100%;
+    height: 100%
+}
+
+#parent {
+    width: 1350px;
+    height: 200px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#nameBox {
+    position: absolute;
+    top: 33%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+}
+
+#textBox {
+    width: 1350px;
+    height: 200px;
+}
+
+#textMessage {
+    width: 1300px;
+    height: 46px;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: azure;
+    text-align: left;
+}
+
+#leftimg {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%)
+}
+
+#centerimg {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#rightimg {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%)
+}
