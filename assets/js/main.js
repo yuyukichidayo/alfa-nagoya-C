@@ -1,10 +1,14 @@
 let userName = "";
+window.onload = main()
 
 function main() {
-    getCookieData = document.cookie;
-    console.log(getCookieData)
-    if (getCookieData != "") {
-        console.log("get cokkie")
+    getCookieData = getCookieArray();
+    console.log(getCookieData["nameData"])
+    if (getCookieData["nameData"] == "") {
+        document.getElementById("timer").style.visibility = "visible";
+        const nameElem = document.getElementById("name")
+        nameElem.style.visibility = "visible";
+        nameElem.innerText = "あなたの名前は" + getCookieData["nameData"];
         ending()
     } else {
         document.getElementById("nameInput").style.visibility = "visible";
@@ -19,11 +23,23 @@ btn.addEventListener("click", e => {
 
 });
 
+function getCookieArray() {
+    var arr = new Array();
+    if (document.cookie != '') {
+        var tmp = document.cookie.split('; ');
+        for (var i = 0; i < tmp.length; i++) {
+            var data = tmp[i].split('=');
+            arr[data[0]] = decodeURIComponent(data[1]);
+        }
+    }
+    return arr;
+}
+
 function userNameGet(userName) {
     if (userName == "") {
         alert("なまえを入力してね！")
     } else {
-        document.cookie = "nameData=" + userName + ";Max-Age=10";
+        document.cookie = "nameData =" + userName + ";Max-Age=10";
         console.log(document.cookie)
         alert("errorが発生しました。ユーザー情報が悪意のあるユーザーに取得されました。")
         document.body.style.backgroundColor = "rgba(255,0,0,0.5)";
@@ -38,7 +54,6 @@ function userNameGet(userName) {
 
 function link() {
     location.href = "STEP1/step1NovelStart.html";
-
 };
 
 function heavyAlert1() {
@@ -58,4 +73,33 @@ function heavyAlert3() {
 
 function heavyAlertEnd() {
     document.getElementById("errorEnd").style.visibility = "visible";
+}
+
+
+//ここからエンディング要素
+
+var timer_ID; //【タイマーID】
+var time = 60; // timeの初期化
+
+function minusTime() {
+    time--; // timeの更新
+    dispTime(); // timeの表示	
+    if (time == 0) {
+        clearInterval(timer_ID); //【タイマーの消去】
+    }
+}
+
+function dispTime() {
+    const timeElem = document.getElementById("timer")
+    timeElem.innerText = time;
+    console.log(time)
+}
+
+window.onload = function() {
+    dispTime(); // timeの表示
+    timer_ID = setInterval("minusTime()", 1000); //【タイマーの設定】
+}
+
+function ending() {
+
 }

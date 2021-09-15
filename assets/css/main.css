@@ -154,3 +154,21 @@ button.btn--radius {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+#timer {
+    visibility: hidden;
+    font-size: large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#name {
+    visibility: hidden;
+    font-size: large;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
