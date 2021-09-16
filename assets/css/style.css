@@ -28,6 +28,16 @@ body {
     list-style: none;
     color: #000;
     margin: 0;
+    background-color: #d3baff;
+}
+
+.scroll {
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    width: 100px;
+    height: 180px;
+    transform: translate(-50%, -50%);
 }
 
 img {
@@ -117,8 +127,6 @@ button {
     display: flex;
 }
 
-.section--clear.isClear {}
-
 .container {
     width: 1100px;
     padding-left: 20px;
@@ -201,7 +209,7 @@ button {
     transform: rotate(90deg);
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    fill: #009245;
+    fill: #A46FFF;
     width: 12px;
     height: 24px;
 }
@@ -244,15 +252,15 @@ button {
 *********************/
 
 .bg-color--keycolor {
-    background-color: #39b54a;
+    background-color: #A46FFF;
 }
 
 .bg-color--subcolor {
-    background-color: #d9e021;
+    background-color: #8C6FFF;
 }
 
 .bg-color--gray {
-    background-color: #e6e6e6;
+    background-color: #D9C8FF;
 }
 
 
@@ -261,7 +269,9 @@ button {
 **********************/
 
 .main-title {
-    margin: 0;
+    margin: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .sub-title {
@@ -281,7 +291,8 @@ button {
     line-height: 1.75;
     text-align: center;
     padding: 9px 20px;
-    background-color: #d9e021;
+    color: #fff;
+    background-color: #A46FFF;
     margin: 0 -20px 20px -20px;
 }
 
@@ -291,7 +302,7 @@ button {
 }
 
 .section-title--keycolorlight {
-    background-color: #8cc63f;
+    background-color: #A46FFF;
 }
 
 .section-title--keycolorlight .section-title__stage {
@@ -299,7 +310,7 @@ button {
 }
 
 .section-title--keycolor {
-    background-color: #39b54a;
+    background-color: #A46FFF;
 }
 
 .section-title--story {
@@ -314,7 +325,7 @@ button {
     line-height: 1.06667;
     margin: 0;
     padding-bottom: 15px;
-    color: #006837;
+    color: #fff;
 }
 
 .section-title--border::after {
@@ -347,7 +358,7 @@ button {
     display: block;
     text-decoration: none;
     cursor: pointer;
-    background-color: #006837;
+    background-color: #5717BF;
     color: #fff;
     font-size: 24px;
     line-height: 1.54167;
@@ -378,7 +389,7 @@ button {
 *****************/
 
 .header {
-    background-color: #fff;
+    background-color: #d3baff;
     height: 60px;
 }
 
@@ -468,7 +479,7 @@ button {
 }
 
 .clear-message {
-    background-color: #d9e021;
+    background-color: #A46FFF;
     padding: 30px 30px 60px;
     position: relative;
 }
@@ -477,7 +488,7 @@ button {
     position: relative;
     display: block;
     text-align: center;
-    color: #006837;
+    color: #fff;
     font-size: 30px;
     padding-bottom: 10px;
     margin-bottom: 35px;
@@ -496,6 +507,7 @@ button {
 
 .clear-message__content {
     text-align: center;
+    color: #fff;
 }
 
 .clear-message__btn {
@@ -529,3 +541,55 @@ button {
 
 
 /*# sourceMappingURL=style.css.map */
+
+.cp_ipselect {
+    overflow: hidden;
+    width: 700px;
+    margin: 2em auto;
+    text-align: center;
+}
+
+.cp_ipselect select {
+    width: 100%;
+    padding-right: 1em;
+    cursor: pointer;
+    text-indent: 0.01px;
+    text-overflow: ellipsis;
+    border: none;
+    outline: none;
+    background: transparent;
+    background-image: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.cp_ipselect select::-ms-expand {
+    display: none;
+}
+
+.cp_ipselect.cp_sl01 {
+    position: relative;
+    border: 1px solid #bbbbbb;
+    border-radius: 2px;
+    background: #ffffff;
+}
+
+.cp_ipselect.cp_sl01::before {
+    position: absolute;
+    top: 0.8em;
+    right: 0.9em;
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #666666;
+    pointer-events: none;
+}
+
+.cp_ipselect.cp_sl01 select {
+    padding: 8px 38px 8px 8px;
+    color: #666666;
+}

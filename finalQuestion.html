@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>封鎖された家庭科室からの脱出 │ Project N</title>
-    <link rel="stylesheet" href="../assets/css/novelTemplate.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/novelTemplate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__logo"><img src="../assets/images/teamLogo.png" alt="チームロゴ"></div>
+            <div class="header__logo"><img src="assets/images/teamLogo.png" alt="チームロゴ"></div>
             <div class="header__name">N・S高生制作サイト</div>
         </div>
     </header>
@@ -29,37 +29,29 @@
                 <!-- STAGE1問題セクション　ここから -->
                 <section class="section">
                     <div class="container">
-                        <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>さぁゲームを始めよう！</h2>
-                        <p class="text-center">まずは、この学校の家庭科室の鍵のありかを知らなければ入ることができない。<br> 下の画像の謎を解き、鍵のありかをキーワード欄に入力しよう。
+                        <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：final</span>最後の問題。</h2>
+                        <p class="text-center">これまで解いてきた問題の答えを組み合わせて、<br> 最後のパスワードを入力しよう。
                         </p>
                         <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
 
 
                         <div class="image__container">
-                            <img src="../assets/images/mysteryImg/nazo1.png" alt="ほげふげ">
+                            <img src="assets/images/stage.png" alt="ほげふげ">
                         </div>
-                        <img src="../assets/images/itemImg/scroll4.png" class="scroll" alt="">
+                        <img src="assets/images/itemImg/scroll4.png" class="scroll" alt="">
                     </div>
                 </section>
                 <!-- STAGE1問題セクション　ここまで -->
 
                 <!-- STAGE1解答入力セクション　ここから -->
                 <section class="section bg-color--keycolor">
-                    <div class="cp_ipselect cp_sl01">
-                        <select required id="anser">
-                            <option value="" hidden>Choose</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                            <option value="D">D</option>
-                            <option value="E">E</option>
-                        </select>
+                    <div class="container">
+                        <h2 class="section-title"><span class="section-title__stage">STAGE：final</span>キーワードを入力</h2>
+                        <input type="text" id="anser">
+                        <button id="btn" class="btn">送信</button>
+
+                        <a class="link-hint" href="../STEP1/STEP1hint.html" target="hint1">ヒントをみる ></a>
                     </div>
-
-                    <button id="btn" class="btn">送信</button>
-
-                    <a class="link-hint" href="../hint.html" target="hint1">ヒントをみる ></a>
-
                 </section>
                 <!-- STAGE1解答入力セクション　ここまで -->
 
@@ -76,7 +68,7 @@
                             <div class="clear-message__content">家庭科室の扉が開いた！<br> さぁ先生を助けるため
                                 <br> ３つステージの謎をとき、暗号を見つけ出そう！
                             </div>
-                            <button onclick="location.href='step1NovelEnd.html'" class="clear-message__btn btn">次のステージへ</button>
+                            <button onclick="location.href='ed.html'" class="clear-message__btn btn">次のステージへ</button>
                         </div>
                     </div>
                 </section>
@@ -93,7 +85,7 @@
             <p class="text-center">株式会社SCRAPとN・S高で実施した授業「リアル脱出ゲームの作り方」の一環で<br>生徒が制作したものであり、SCRAPが主催/公認するものではありません。</p>
         </div>
     </footer>
-    <script src="../assets/js/STEP1/step1.js"></script>
+    <script src="assets/js/finalQuestion.js"></script>
 </body>
 
 </html>

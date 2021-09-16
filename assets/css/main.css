@@ -62,6 +62,7 @@ html {
 body {
     width: 1250px;
     height: 700px;
+    background-color: #fff;
 }
 
 #nameInput {

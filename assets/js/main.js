@@ -4,7 +4,7 @@ window.onload = main()
 function main() {
     getCookieData = getCookieArray();
     console.log(getCookieData["nameData"])
-    if (getCookieData["nameData"] == "") {
+    if (getCookieData["nameData"] != undefined) {
         document.getElementById("timer").style.visibility = "visible";
         const nameElem = document.getElementById("name")
         nameElem.style.visibility = "visible";
@@ -25,7 +25,7 @@ btn.addEventListener("click", e => {
 
 function getCookieArray() {
     var arr = new Array();
-    if (document.cookie != '') {
+    if (document.cookie != "") {
         var tmp = document.cookie.split('; ');
         for (var i = 0; i < tmp.length; i++) {
             var data = tmp[i].split('=');
@@ -39,7 +39,7 @@ function userNameGet(userName) {
     if (userName == "") {
         alert("なまえを入力してね！")
     } else {
-        document.cookie = "nameData =" + userName + ";Max-Age=10";
+        document.cookie = "nameData=" + userName + ";Max-Age=10";
         console.log(document.cookie)
         alert("errorが発生しました。ユーザー情報が悪意のあるユーザーに取得されました。")
         document.body.style.backgroundColor = "rgba(255,0,0,0.5)";
@@ -95,7 +95,7 @@ function dispTime() {
     console.log(time)
 }
 
-window.onload = function() {
+window.onload = function timeStart() {
     dispTime(); // timeの表示
     timer_ID = setInterval("minusTime()", 1000); //【タイマーの設定】
 }
