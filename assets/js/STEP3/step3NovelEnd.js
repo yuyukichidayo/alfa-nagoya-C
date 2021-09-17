@@ -1,13 +1,13 @@
 const provision = function() {
     //引数は左から順に event, backgroundimg, leftimg, centerimg, rightimg, text
-    shine1 = new Shine(moneNameBox, blueback, mone, bag, bag, "The Egg 君は家に帰っている途中で死んだ。交通事故だった。")
-    shine2 = new Shine(moneNameBox, siverback, bag, mone, invisible, "ごく普通の交通事故だったが、致命的だった。")
-    shine3 = new Shine(moneNameBox, blueback, megane, mone, mone, "君は妻と子供二人を残した。死ぬときに痛みはなかった。")
-    shine4 = new Shine(moneNameBox, blueback, mone, bag, bag, "君の体はもうボロボロで、実際この方が良かった。")
-    shine5 = new Shine(moneNameBox, blueback, mone, bag, bag, "そして、君は私と出会った。")
-    shine6 = new Shine(moneNameBox, blueback, mone, bag, bag, "hoge")
-    shine7 = new Shine(moneNameBox, blueback, mone, bag, bag, "hoge")
-    shine8 = new Shine(moneNameBox, blueback, mone, bag, bag, "hoge")
+    shine1 = new Shine(moneNameBox, blueback, mone_Right, bag, grayGoo_Shadow, "The Egg 君は家に帰っている途中で死んだ。交通事故だった。")
+    shine2 = new Shine(moneNameBox, siverback, invisible, mone_Shadow, invisible, "ごく普通の交通事故だったが、致命的だった。")
+    shine3 = new Shine(moneNameBox, blueback, invisible, mone_Shadow, mone_Right, "君は妻と子供二人を残した。死ぬときに痛みはなかった。")
+    shine4 = new Shine(moneNameBox, blueback, invisible, bag, bag, "君の体はもうボロボロで、実際この方が良かった。")
+    shine5 = new Shine(moneNameBox, blueback, invisible, bag, bag, "そして、君は私と出会った。")
+    shine6 = new Shine(moneNameBox, blueback, invisible, bag, bag, "hoge")
+    shine7 = new Shine(moneNameBox, blueback, invisible, bag, bag, "hoge")
+    shine8 = new Shine(moneNameBox, blueback, invisible, bag, bag, "hoge")
     const shines = [shine1, shine2, shine3, shine4, shine5, shine6, shine7, shine8]
     return shines
 }
