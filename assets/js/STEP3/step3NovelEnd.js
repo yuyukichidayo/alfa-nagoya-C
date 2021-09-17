@@ -20,9 +20,14 @@ const blueback = "../assets/images/backroundImg/blue21-scaled.jpg"
 const siverback = "../assets/images/backroundImg/siverimg.jpeg"
 
 //よく使うキャラクター一覧
-const mone = "../assets/images/charaImg/july_nikkori.png"
+const july = "../assets/images/charaImg/july_nikkori.png"
 const megane = "../assets/images/charaImg/メガネ.png"
-const grayGoo = ""
+
+const mone_Right = "../assets/images/charaImg/モネ＿標準_明.png"
+const mone_Shadow = "../assets/images/charaImg/モネ＿標準_暗.png"
+
+const grayGoo_Right = "../assets/images/charaImg/グレイグー_通常_明.png"
+const grayGoo_Shadow = "../assets/images/charaImg/グレイグー_通常_暗.png"
 
 //よく使うアイテム一覧
 const invisible = "../assets/images/itemImg/null.png"
