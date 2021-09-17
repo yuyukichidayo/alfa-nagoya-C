@@ -1,13 +1,13 @@
 const provision = function() {
     //引数は左から順に event, backgroundimg, leftimg, centerimg, rightimg, text
-    shine1 = new Shine(moneNameBox, blueback, mone_Right, bag, grayGoo_Shadow, "The Egg 君は家に帰っている途中で死んだ。交通事故だった。")
-    shine2 = new Shine(moneNameBox, siverback, invisible, mone_Shadow, invisible, "ごく普通の交通事故だったが、致命的だった。")
-    shine3 = new Shine(moneNameBox, blueback, invisible, mone_Shadow, mone_Right, "君は妻と子供二人を残した。死ぬときに痛みはなかった。")
-    shine4 = new Shine(moneNameBox, blueback, invisible, bag, bag, "君の体はもうボロボロで、実際この方が良かった。")
-    shine5 = new Shine(moneNameBox, blueback, invisible, bag, bag, "そして、君は私と出会った。")
-    shine6 = new Shine(moneNameBox, blueback, invisible, bag, bag, "hoge")
-    shine7 = new Shine(moneNameBox, blueback, invisible, bag, bag, "hoge")
-    shine8 = new Shine(moneNameBox, blueback, invisible, bag, bag, "hoge")
+    shine1 = new Shine(moneNameBox, blueback, mone, bag, bag, "The Egg 君は家に帰っている途中で死んだ。交通事故だった。")
+    shine2 = new Shine(moneNameBox, siverback, bag, mone, invisible, "ごく普通の交通事故だったが、致命的だった。")
+    shine3 = new Shine(moneNameBox, blueback, megane, mone, mone, "君は妻と子供二人を残した。死ぬときに痛みはなかった。")
+    shine4 = new Shine(moneNameBox, blueback, mone, bag, bag, "君の体はもうボロボロで、実際この方が良かった。")
+    shine5 = new Shine(moneNameBox, blueback, mone, bag, bag, "そして、君は私と出会った。")
+    shine6 = new Shine(moneNameBox, blueback, mone, bag, bag, "hoge")
+    shine7 = new Shine(moneNameBox, blueback, mone, bag, bag, "hoge")
+    shine8 = new Shine(moneNameBox, blueback, mone, bag, bag, "hoge")
     const shines = [shine1, shine2, shine3, shine4, shine5, shine6, shine7, shine8]
     return shines
 }
@@ -20,14 +20,9 @@ const blueback = "../assets/images/backroundImg/blue21-scaled.jpg"
 const siverback = "../assets/images/backroundImg/siverimg.jpeg"
 
 //よく使うキャラクター一覧
-const july = "../assets/images/charaImg/july_nikkori.png"
+const mone = "../assets/images/charaImg/july_nikkori.png"
 const megane = "../assets/images/charaImg/メガネ.png"
-
-const mone_Right = "../assets/images/charaImg/モネ＿標準_明.png"
-const mone_Shadow = "../assets/images/charaImg/モネ＿標準_暗.png"
-
-const grayGoo_Right = "../assets/images/charaImg/グレイグー_通常_明.png"
-const grayGoo_Shadow = "../assets/images/charaImg/グレイグー_通常_暗.png"
+const grayGoo = ""
 
 //よく使うアイテム一覧
 const invisible = "../assets/images/itemImg/null.png"
@@ -93,7 +88,7 @@ function clickExecution() {
     //8の部分をshineの数にしてください
     if (count > shines.length) {
         //飛ばしたいリンクへ
-        location.href = "../STEP4/step4.html";
+        location.href = "./STEP4/step4.html";
     }
     count++
     console.log(count)
