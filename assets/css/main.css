@@ -95,9 +95,10 @@ button.btn--radius {
 
 #error1 {
     width: 60%;
+    height: 100%;
     position: absolute;
     visibility: hidden;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
