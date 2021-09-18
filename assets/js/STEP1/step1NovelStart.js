@@ -13,7 +13,8 @@ const provision = function() {
 }
 
 //ネームボックス一覧
-const moneNameBox = "../assets/images/itemImg/nameBox仮.png"
+const moneNameBox = "../assets/images/itemImg/サイバーフレーム_モ.png"
+const grayGooNameBox = "../assets/images/itemImg/サイバーフレーム_グ.png"
 
 //よく使う背景一覧
 const blueback = "../assets/images/backroundImg/blue21-scaled.jpg"
@@ -35,8 +36,8 @@ const bag = "../assets/images/itemImg/kaban_kirei.png"
 
 
 class Shine {
-    constructor(nameBoximg, backgroundimg, leftimg, centerimg, rightimg, text) {
-        this.nameBoximg = nameBoximg;
+    constructor(textBoximg, backgroundimg, leftimg, centerimg, rightimg, text) {
+        this.textBoximg = textBoximg;
         this.backgroundimg = backgroundimg;
         this.leftimg = leftimg;
         this.centerimg = centerimg;
@@ -45,9 +46,9 @@ class Shine {
     }
 };
 
-function nameBoximg(img) {
-    const nameBoximg = document.getElementById("nameBox");
-    nameBoximg.setAttribute("src", img)
+function textBoximg(img) {
+    const textBoximg = document.getElementById("textBox");
+    textBoximg.setAttribute("src", img)
 }
 
 function backgroundimg(img) {
@@ -75,7 +76,7 @@ function textMessage(text) {
 }
 
 function shineexecution(shine) {
-    nameBoximg(shine.nameBoximg)
+    textBoximg(shine.textBoximg)
     backgroundimg(shine.backgroundimg)
     leftimg(shine.leftimg)
     centerimg(shine.centerimg)
@@ -91,15 +92,37 @@ function main() {
 
 function clickExecution() {
     //8の部分をshineの数にしてください
-    if (count > shines.length) {
-        //飛ばしたいリンクへ
-        location.href = "./STEP1.html";
-    }
     count++
     console.log(count)
     shineexecution(shines[count]);
 }
 
+document.body.addEventListener('keydown',
+    event => {
+        if (event.key === 'ArrowLeft') {
+            if (count == 0) {
+                return
+            } else {
+                count--
+                console.log(count)
+                shineexecution(shines[count]);
+            }
+
+        }
+    });
+
+document.body.addEventListener('keydown',
+    event => {
+        if (count > shines.length) {
+            //飛ばしたいリンクへ
+            location.href = "./STEP1.html";
+        }
+        if (event.key === 'ArrowRight') {
+            count++
+            console.log(count)
+            shineexecution(shines[count]);
+        }
+    });
 var count = 0
 
 let clickCheck = document.getElementById('textBox');
