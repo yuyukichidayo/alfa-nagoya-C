@@ -1,6 +1,6 @@
 const provision = function() {
     //引数は左から順に event, backgroundimg, leftimg, centerimg, rightimg, text
-    shine1 = new Shine(moneNameBox, blueback, mone_Right, bag, grayGoo_Shadow, "The Egg 君は家に帰っている途中で死んだ。交通事故だった。")
+    shine1 = new Shine(moneNameBox, blueback, mone_Right, bag, grayGoo_Shadow, "The Egg  <ruby>紫陽花<rt>あじさい</rt></ruby> 君は家に帰っている途中で死んだ。交通事故だった。")
     shine2 = new Shine(moneNameBox, siverback, invisible, mone_Shadow, invisible, "ごく普通の交通事故だったが、致命的だった。")
     shine3 = new Shine(moneNameBox, blueback, invisible, mone_Shadow, mone_Right, "君は妻と子供二人を残した。死ぬときに痛みはなかった。")
     shine4 = new Shine(moneNameBox, blueback, invisible, bag, bag, "君の体はもうボロボロで、実際この方が良かった。")
@@ -72,7 +72,7 @@ function rightimg(img) {
 
 function textMessage(text) {
     const textelem = document.getElementById("textMessage");
-    textelem.innerText = text;
+    textelem.innerHTML = text;
 }
 
 function shineexecution(shine) {
@@ -91,6 +91,10 @@ function main() {
 }
 
 function clickExecution() {
+    if (count > shines.length) {
+        //飛ばしたいリンクへ
+        location.href = "./STEP1.html";
+    }
     //8の部分をshineの数にしてください
     count++
     console.log(count)
@@ -107,7 +111,6 @@ document.body.addEventListener('keydown',
                 console.log(count)
                 shineexecution(shines[count]);
             }
-
         }
     });
 
