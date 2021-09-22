@@ -5,48 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 
 <body class="main main-page">
-    <div class="clearfix">
-        <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
-            <h2 style="text-align:center"><span style="font-weight:bold;"><span style="background: linear-gradient(transparent 80%, #cc99ff 80%);">最終問題</span></span>
-            </h2>
-            <div style="padding: 0.5em 1em;"><img src="http://www.scrapmagazine.com/wp-content/uploads/2020/04/d4cd2592c64e5387e07d8ddeb345d6c3.png" alt="" style="border:solid 5px #000000" ""="" class="alignnone size-medium wp-image-19225" id="q4&quot;" srcset="https://www.scrapmagazine.com/wp-content/uploads/2020/04/d4cd2592c64e5387e07d8ddeb345d6c3.png 1755w, https://www.scrapmagazine.com/wp-content/uploads/2020/04/d4cd2592c64e5387e07d8ddeb345d6c3-300x212.png 300w, https://www.scrapmagazine.com/wp-content/uploads/2020/04/d4cd2592c64e5387e07d8ddeb345d6c3-768x543.png 768w, https://www.scrapmagazine.com/wp-content/uploads/2020/04/d4cd2592c64e5387e07d8ddeb345d6c3-1024x724.png 1024w, https://www.scrapmagazine.com/wp-content/uploads/2020/04/d4cd2592c64e5387e07d8ddeb345d6c3-239x169.png 239w, https://www.scrapmagazine.com/wp-content/uploads/2020/04/d4cd2592c64e5387e07d8ddeb345d6c3-375x265.png 375w, https://www.scrapmagazine.com/wp-content/uploads/2020/04/d4cd2592c64e5387e07d8ddeb345d6c3-650x460.png 650w, https://www.scrapmagazine.com/wp-content/uploads/2020/04/d4cd2592c64e5387e07d8ddeb345d6c3-682x482.png 682w, https://www.scrapmagazine.com/wp-content/uploads/2020/04/d4cd2592c64e5387e07d8ddeb345d6c3-588x416.png 588w"
-                    sizes="(max-width: 1755px) 100vw, 1755px"></div>
-            <p></p>
-            <form name="que1">
-                <p></p>
-                <div class="tac mt40 mb40">
-                    答え　<input type="text" name="answer" style="padding:0.5em; width:400px; font-size:1.3em; margin:0.5em auto; border-radius: 8px;"><br>
-                    <p></p>
-                    <div style="margin:0 auto; text-align:center;"><input type="button" value="解答する" style="padding:0.5em 1em; font-size: 1.2em; background-color:#424242; color:#fff; border-radius: 8px;" onclick="check()"></div>
-                </div>
-                <p>　</p>
-            </form>
-            <p></p>
-            <p>
-                <script type="text/javascript">
-                    function check() {　
-                        if (document.que1.answer.value == "キックオフ") {　
-                            window.location.href = "(http://www.scrapmagazine.com/frontale_stayhomenazo/)";　
-                        } else if (document.que1.answer.value == "きっくおふ") {　
-                            window.location.href = "(http://www.scrapmagazine.com/frontale_stayhomenazo/)";　
-                        } else if (document.que1.answer.value == "ｷｯｸｵﾌ") {　
-                            window.location.href = "(http://www.scrapmagazine.com/frontale_stayhomenazo/)";　
-                        }　
-                        else {　
-                            window.location.href = "(http://www.scrapmagazine.com/frontale_stayhome_/)"　
-                        }　
-                    }
-                </script>
-            </p>
-            <h2 style="text-align:center"><a href="http://www.scrapmagazine.com/hint/frontale_hint/">　＞＞ヒントはこちら</a></h2>
+    <header class="header">
+        <div class="container">
+            <div class="header__logo"><img src="assets/images/teamLogo.png" alt="チームロゴ"></div>
+            <div class="header__name">N・S高生制作サイト</div>
         </div>
-        <p></p>
-    </div>
+    </header>
+    <div class="clearfix container">
+        <div style="padding: 10px; margin-bottom: 10px; border: 2px solid #333333; border-radius: 10px; background-color: #fff;">
+            <h2 class="text-center"><span style="font-weight:bold;"><span style="background: linear-gradient(transparent 80%, #fff 80%);"></span></span>
+            </h2>
 
+            <div class="image__container">
+                <img src="assets/images/mysteryImg/nazoFinal.png" alt="ほげふげ">
+            </div>
+            <section class="section">
+                <input type="text" id="anser">
+            </section>
+            <button id="btn" class="btn">送信</button>
+        </div>
+        <script type="text/javascript">
+            btn.addEventListener("click", e => {
+                const anser = document.getElementById("anser").value;
+                if (anser == "dead") {
+                    alert("dead")
+                } else if (anser == "true") {
+                    alert("true")
+                } else {
+                    alert("反応がない。どうやら答えが違うようだ！")
+                }
+
+            });
+        </script>
+        </p>
+        <h2 class="text-center"><a href="hint.html">ヒントをみる</a></h2>
+    </div>
+    <p></p>
+    </div>
+    <footer class="footer section bg-color--gray">
+        <div class="container">
+            <p class="text-center">授業主催： N・S高<br>協力：株式会社SCRAP<br>企画制作：N・S高生</p>
+            <p class="text-center">「リアル脱出ゲーム」は株式会社SCRAPの登録商標です。</p>
+            <p class="text-center">株式会社SCRAPとN・S高で実施した授業「リアル脱出ゲームの作り方」の一環で<br>生徒が制作したものであり、SCRAPが主催/公認するものではありません。</p>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 const provision = function() {
     //引数は左から順に event, backgroundimg, leftimg, centerimg, rightimg, text
-    shine1 = new Shine(moneNameBox, blueback, mone_Right, bag, grayGoo_Shadow, "The Egg  <ruby>紫陽花<rt>あじさい</rt></ruby> 君は家に帰っている途中で死んだ。交通事故だった。")
-    shine2 = new Shine(moneNameBox, siverback, invisible, mone_Shadow, invisible, "ごく普通の交通事故だったが、致命的だった。")
+    shine1 = new Shine(grayGooNameBox, blueback, mone_Right, bag, grayGoo_Shadow, "The Egg  <ruby>紫陽花<rt>あじさい</rt></ruby> 君は家に帰っている途中で死んだ。交通事故だった。")
+    shine2 = new Shine(grayGooNameBox, siverback, invisible, mone_Shadow, invisible, "ごく普通の交通事故だったが、致命的だった。")
     shine3 = new Shine(moneNameBox, blueback, invisible, mone_Shadow, mone_Right, "君は妻と子供二人を残した。死ぬときに痛みはなかった。")
     shine4 = new Shine(moneNameBox, blueback, invisible, bag, bag, "君の体はもうボロボロで、実際この方が良かった。")
     shine5 = new Shine(moneNameBox, blueback, invisible, bag, bag, "そして、君は私と出会った。")
@@ -13,7 +13,7 @@ const provision = function() {
 }
 
 //ネームボックス一覧
-const moneNameBox = "../assets/images/itemImg/サイバーフレーム_モ.png"
+const moneNameBox = "../assets/images/itemImg/textBoxmone.png"
 const grayGooNameBox = "../assets/images/itemImg/サイバーフレーム_グ.png"
 
 //よく使う背景一覧
