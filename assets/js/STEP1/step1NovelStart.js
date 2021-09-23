@@ -111,6 +111,7 @@ const shines = provision();
 
 function main() {
     shineexecution(shines[0]);
+    alert("※左右の方向キーでストーリーが進みます！！")
 }
 
 function clickExecution() {
