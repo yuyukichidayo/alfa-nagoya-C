@@ -20,8 +20,8 @@ const provision = function() {
     shine18 = new Shine(grayGooNameBox, mozaiku, mone_Shadow, invisible, grayGoo_Right, "<ruby>俺<rt>おれ</rt></ruby>が少し<ruby>攻撃<rt>こうげき</rt></ruby>すればお前は消える。今度こそだ！")
     shine19 = new Shine(grayGooNameBox, mozaiku, mone_Right, invisible, grayGoo_Shadow, "やめて！！！")
     shine20 = new Shine(grayGooNameBox, mozaiku, mone_Shadow, invisible, grayGoo_Right, "チッ……止められたか。だが間に合わせのセキュリティで、<br>俺の攻撃にいつまで<ruby>耐<rt>た</rt></ruby>えられるかな？")
-    shine21 = new Shine(grayGooNameBox, mozaiku, mone_Shadow, invisible, grayGoo_Right, "ぐっ……今のうちにきみは、<br>グレイ・グーとわたしをつなげるロックを外して！")
-    shine22 = new Shine(grayGooNameBox, mozaiku, mone_Shadow, invisible, grayGoo_Right, "その間はわたしが守るから、きみは落ち着いて問題に集中して！")
+    shine21 = new Shine(grayGooNameBox, mozaiku, mone_Right, invisible, grayGoo_Shadow, "ぐっ……今のうちにきみは、<br>グレイ・グーとわたしをつなげるロックを外して！")
+    shine22 = new Shine(grayGooNameBox, mozaiku, mone_Right, invisible, grayGoo_Shadow, "その間はわたしが守るから、きみは落ち着いて問題に集中して！")
 
     const shines = [shine1, shine2, shine3, shine4, shine5, shine6, shine7, shine8, shine9, shine10, shine11, shine12, shine13, shine14, shine15, shine16, shine17, shine18, shine19, shine20, shine21, shine22]
     return shines
