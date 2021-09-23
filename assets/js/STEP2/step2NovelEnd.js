@@ -126,6 +126,8 @@ function clickExecution() {
     shineexecution(shines[count]);
 }
 
+const shines = provision();
+
 document.body.addEventListener('keydown',
     event => {
         if (event.key === 'ArrowLeft') {
