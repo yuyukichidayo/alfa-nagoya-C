@@ -1,5 +1,5 @@
 let userName = "";
-window.onload = main()
+window.onload = main();
 
 function main() {
     getCookieData = getCookieArray();
