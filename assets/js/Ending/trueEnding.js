@@ -181,3 +181,4 @@ clickCheck.addEventListener('click', clickExecution)
 
 let clickheck2 = document.getElementById('textMessage');
 clickheck2.addEventListener('click', clickExecution)
+    //テスト//
