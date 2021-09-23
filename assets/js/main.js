@@ -18,41 +18,41 @@ const provision = function() {
 }
 
 //ネームボックス一覧
-const moneNameBox = "../assets/images/itemImg/サイバーフレーム_モ.png"
-const grayGooNameBox = "../assets/images/itemImg/サイバーフレーム_グ.png"
-const nameBox = "../assets/images/itemImg/サイバーフレーム.png"
-const mozaiku = "../assets/images/backroundImg/モザイク.png"
-const moneMozaiku = "../assets/images/backroundImg/モザイクモネ.png"
+const moneNameBox = "assets/images/itemImg/サイバーフレーム_モ.png"
+const grayGooNameBox = "assets/images/itemImg/サイバーフレーム_グ.png"
+const nameBox = "assets/images/itemImg/サイバーフレーム.png"
+const mozaiku = "assets/images/backroundImg/モザイク.png"
+const moneMozaiku = "assets/images/backroundImg/モザイクモネ.png"
 
 //よく使う背景一覧
-const blueback = "../assets/images/backroundImg/blue21-scaled.jpg"
-const siverback = "../assets/images/backroundImg/siverimg.jpeg"
-const blackback = "../assets/images/backroundImg/背景用.jpg"
+const blueback = "assets/images/backroundImg/blue21-scaled.jpg"
+const siverback = "assets/images/backroundImg/siverimg.jpeg"
+const blackback = "assets/images/backroundImg/背景用.jpg"
 
 //モネ差分
-const mone_Right = "../assets/images/charaImg/-min.png"
-const mone_Shadow = "../assets/images/charaImg/12-min.png"
-const mone_ki = "../assets/images/charaImg/31-min.png"
-const mone_do = "../assets/images/charaImg/61-min.png"
-const mone_ai = "../assets/images/charaImg/41-min.png"
-const mone_ai2 = "../assets/images/charaImg/71-min.png"
-const mone_sinken = "../assets/images/charaImg/51-min.png"
-const mone_zensin = "../assets/images/charaImg/モネ＿標準_明.png"
-const mone_mozaiku = "../assets/images/charaImg/mone-2.png"
+const mone_Right = "assets/images/charaImg/-min.png"
+const mone_Shadow = "assets/images/charaImg/12-min.png"
+const mone_ki = "assets/images/charaImg/31-min.png"
+const mone_do = "assets/images/charaImg/61-min.png"
+const mone_ai = "assets/images/charaImg/41-min.png"
+const mone_ai2 = "assets/images/charaImg/71-min.png"
+const mone_sinken = "assets/images/charaImg/51-min.png"
+const mone_zensin = "assets/images/charaImg/モネ＿標準_明.png"
+const mone_mozaiku = "assets/images/charaImg/2-min.png"
 
 
 //クレイグー差分
-const grayGoo_Right = "../assets/images/charaImg/11-min.png"
-const grayGoo_Shadow = "../assets/images/charaImg/1-min.png"
-const grayGoo_ki = "../assets/images/charaImg/61-1-min.png"
-const grayGoo_sinken = "../assets/images/charaImg/41-1-min.png"
-const grayGoo_do = "../assets/images/charaImg/31-1-min.png"
-const grayGoo_ai = "../assets/images/charaImg/21-min.png"
+const grayGoo_Right = "assets/images/charaImg/11-min.png"
+const grayGoo_Shadow = "assets/images/charaImg/1-min.png"
+const grayGoo_ki = "assets/images/charaImg/61-1-min.png"
+const grayGoo_sinken = "assets/images/charaImg/41-1-min.png"
+const grayGoo_do = "assets/images/charaImg/31-1-min.png"
+const grayGoo_ai = "assets/images/charaImg/21-min.png"
 
 
 //小道具＆SE一覧
-const invisible = "../assets/images/itemImg/null.png"
-const bag = "../assets/images/itemImg/kaban_kirei.png"
+const invisible = "assets/images/itemImg/null.png"
+const bag = "assets/images/itemImg/kaban_kirei.png"
 
 
 class Shine {

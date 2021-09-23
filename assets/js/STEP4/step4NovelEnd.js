@@ -31,7 +31,7 @@ const mone_ai = "../assets/images/charaImg/41-min.png"
 const mone_ai2 = "../assets/images/charaImg/71-min.png"
 const mone_sinken = "../assets/images/charaImg/51-min.png"
 const mone_zensin = "../assets/images/charaImg/モネ＿標準_明.png"
-const mone_mozaiku = "../assets/images/charaImg/mone-2.png"
+const mone_mozaiku = "../assets/images/charaImg/2-min.png"
 
 
 //クレイグー差分
