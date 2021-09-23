@@ -23,19 +23,23 @@ const siverback = "../assets/images/backroundImg/siverimg.jpeg"
 const blackback = "../assets/images/backroundImg/背景用.jpg"
 
 //モネ差分
-const mone_Right = "../assets/images/charaImg/モネ＿標準_明.png"
-const mone_Shadow = "../assets/images/charaImg/モネ＿標準_暗.png"
-const mone_ki = "../assets/images/charaImg/モネ喜-min.png"
-const mone_do = "../assets/images/charaImg/モネ怒-min.png"
-const mone_ai = "../assets/images/charaImg/モネ哀-min.png"
+const mone_Right = "../assets/images/charaImg/-min.png"
+const mone_Shadow = "../assets/images/charaImg/12-min.png"
+const mone_ki = "../assets/images/charaImg/31-min.png"
+const mone_do = "../assets/images/charaImg/61-min.png"
+const mone_ai = "../assets/images/charaImg/71-min.png"
+const mone_sinken = "../assets/images/charaImg/51-min.png"
+const mone_zensin = "../assets/images/charaImg/モネ＿標準_明.png"
 
 
 //クレイグー差分
-const grayGoo_Right = "../assets/images/charaImg/グレイグー_通常_明.png"
-const grayGoo_Shadow = "../assets/images/charaImg/グレイグー_通常_暗.png"
-const grayGoo_ki = "../assets/images/charaImg/楽１-min.png"
-const grayGoo_do = "../assets/images/charaImg/怒-min.png"
-const grayGoo_ai = "../assets/images/charaImg/哀-min.png"
+const grayGoo_Right = "../assets/images/charaImg/11-min.png"
+const grayGoo_Shadow = "../assets/images/charaImg/1-min.png"
+const grayGoo_ki = "../assets/images/charaImg/61-1-min.png"
+const grayGoo_sinken = "../assets/images/charaImg/41-1-min.png"
+const grayGoo_do = "../assets/images/charaImg/31-1-min.png"
+const grayGoo_ai = "../assets/images/charaImg/21-min.png"
+
 
 //小道具＆SE一覧
 const invisible = "../assets/images/itemImg/null.png"
@@ -101,7 +105,7 @@ function main() {
 function clickExecution() {
     if (count > shines.length) {
         //飛ばしたいリンクへ
-        location.href = "../STEP2/STEP2.html";
+        location.href = "../Ending/finalQuestion.html";
     }
     //8の部分をshineの数にしてください
     count++
@@ -126,7 +130,7 @@ document.body.addEventListener('keydown',
     event => {
         if (count > shines.length) {
             //飛ばしたいリンクへ
-            location.href = "../main.html";
+            location.href = "../Ending/finalQuestion.html";
         }
         if (event.key === 'ArrowRight') {
             count++
