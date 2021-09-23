@@ -201,7 +201,7 @@ function userNameGet(userName) {
     if (userName == "") {
         alert("なまえを入力してね！")
     } else {
-        document.cookie = "nameData=" + userName + ";Max-Age=10";
+        document.cookie = "nameData=" + userName + ";Max-Age=10000000000000";
         console.log(document.cookie)
         alert("errorが発生しました。ユーザー情報が悪意のあるユーザーに取得されました。")
         document.body.style.backgroundColor = "rgba(255,0,0)";

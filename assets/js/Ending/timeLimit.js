@@ -29,10 +29,11 @@ function alterLife(value) {
 }
 
 
-window.onload = timerId()
+window.onload = timerId();
 
 
 function timerId() {
     setInterval(() => alterLife(-0.5), 1000);
+    setTimeout(() => location.href = "./nomalEndingNovel.html", 200000)
     console.log("カウント開始")
 }
