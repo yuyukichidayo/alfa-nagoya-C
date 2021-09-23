@@ -27,9 +27,11 @@ const mone_Right = "../assets/images/charaImg/-min.png"
 const mone_Shadow = "../assets/images/charaImg/12-min.png"
 const mone_ki = "../assets/images/charaImg/31-min.png"
 const mone_do = "../assets/images/charaImg/61-min.png"
-const mone_ai = "../assets/images/charaImg/71-min.png"
+const mone_ai = "../assets/images/charaImg/41-min.png"
+const mone_ai2 = "../assets/images/charaImg/71-min.png"
 const mone_sinken = "../assets/images/charaImg/51-min.png"
 const mone_zensin = "../assets/images/charaImg/モネ＿標準_明.png"
+const mone_mozaiku = "../assets/images/charaImg/mone-2.png"
 
 
 //クレイグー差分
