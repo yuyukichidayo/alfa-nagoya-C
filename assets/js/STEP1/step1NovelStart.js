@@ -1,36 +1,49 @@
 const provision = function() {
-    //引数は左から順に event, backgroundimg, leftimg, centerimg, rightimg, text
-    shine1 = new Shine(grayGooNameBox, blueback, mone_Right, bag, grayGoo_Shadow, "The Egg  <ruby>紫陽花<rt>あじさい</rt></ruby> 君は家に帰っている途中で死んだ。交通事故だった。")
-    shine2 = new Shine(grayGooNameBox, siverback, invisible, mone_Shadow, invisible, "ごく普通の交通事故だったが、致命的だった。")
-    shine3 = new Shine(moneNameBox, blueback, invisible, mone_Shadow, mone_Right, "君は妻と子供二人を残した。死ぬときに痛みはなかった。")
-    shine4 = new Shine(moneNameBox, blueback, invisible, bag, bag, "君の体はもうボロボロで、実際この方が良かった。")
-    shine5 = new Shine(moneNameBox, blueback, invisible, bag, bag, "そして、君は私と出会った。")
-    shine6 = new Shine(moneNameBox, blueback, invisible, bag, bag, "hoge")
-    shine7 = new Shine(moneNameBox, blueback, invisible, bag, bag, "hoge")
-    shine8 = new Shine(moneNameBox, blueback, invisible, bag, bag, "hoge")
-    const shines = [shine1, shine2, shine3, shine4, shine5, shine6, shine7, shine8]
+    //引数は左から順に nameBox, backgroundimg, leftimg, centerimg, rightimg, text
+    shine1 = new Shine(nameBox, blackback, invisible, invisible, invisible, "......")
+    shine2 = new Shine(nameBox, blackback, invisible, invisible, invisible, "......もしもし、もしもし？")
+    shine3 = new Shine(nameBox, blackback, invisible, invisible, invisible, "......うん、つながってるみたい。")
+    shine4 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "間に合ってよかった。いきなりごめんね。わたしはモネ。")
+    shine5 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "きみのパソコンとわたし自身を守るためにやってきたAIなんだ。")
+    shine6 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "さっきのは、わたしを追ってきた■■■・■■の仕業。")
+    shine7 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "■■■・■■はさっきみたいな感じで、<br>パソコンに■■■■を感染させて、データを■ってしまうの。")
+    shine8 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "わたしは■■■・■■から<ruby>逃<rt>に</rt></ruby>げてくるのがやっとで…<br>この通り、■■■・■■に関して話そうとすると暗号化されてしまうの。")
+    shine9 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "だからまず、きみにはわたしの暗号化のロックを外すために、<br>この問題を解いてほしいんだ。")
+    shine10 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "そしたら、■■■・■■について教えられるから。")
+    shine11 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "調べればわたしでも分かるけど……今はそれもできなくて。")
+    shine12 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "わたしたちAIは、何でも知っているようで、<br>本当はインターネットから集めたデータをうまく活用しているだけ。")
+    shine13 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "こうやってロックをかけられたら、<br>分かるものも分からなくなっちゃうんだ。")
+    shine14 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "だから、きみの力が必要なの。<br>人間であるきみなら、わたしにはできないことができるから。")
+    shine15 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "それじゃあ、問題に行くよ。お願いね。")
+    const shines = [shine1, shine2, shine3, shine4, shine5, shine6, shine7, shine8, shine9, shine10, shine11, shine12, shine13, shine14, shine15]
     return shines
 }
 
 //ネームボックス一覧
-const moneNameBox = "../assets/images/itemImg/textBoxmone.png"
+const moneNameBox = "../assets/images/itemImg/サイバーフレーム_モ.png"
 const grayGooNameBox = "../assets/images/itemImg/サイバーフレーム_グ.png"
+const nameBox = "../assets/images/itemImg/サイバーフレーム.png"
+const mozaiku = "../assets/images/backroundImg/モザイク.png"
+const moneMozaiku = "../assets/images/backroundImg/モザイクモネ.png"
 
 //よく使う背景一覧
 const blueback = "../assets/images/backroundImg/blue21-scaled.jpg"
 const siverback = "../assets/images/backroundImg/siverimg.jpeg"
+const blackback = "../assets/images/backroundImg/背景用.jpg"
 
-//よく使うキャラクター一覧
-const july = "../assets/images/charaImg/july_nikkori.png"
-const megane = "../assets/images/charaImg/メガネ.png"
-
+//モネ差分
 const mone_Right = "../assets/images/charaImg/モネ＿標準_明.png"
 const mone_Shadow = "../assets/images/charaImg/モネ＿標準_暗.png"
+const mone_ki = "../assets/images/charaImg/モネ喜-min.png"
+const mone_do = "../assets/images/charaImg/モネ怒-min.png"
+const mone_ai = "../assets/images/charaImg/モネ哀-min.png"
 
+
+//クレイグー差分
 const grayGoo_Right = "../assets/images/charaImg/グレイグー_通常_明.png"
 const grayGoo_Shadow = "../assets/images/charaImg/グレイグー_通常_暗.png"
 
-//よく使うアイテム一覧
+//小道具＆SE一覧
 const invisible = "../assets/images/itemImg/null.png"
 const bag = "../assets/images/itemImg/kaban_kirei.png"
 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body class="main main-page">
+    <header class="header">
+        <div class="container">
+            <div class="header__logo"><img src="../assets/images/teamLogo.png" alt="チームロゴ"></div>
+            <div class="header__name">N・S高生制作サイト</div>
+        </div>
+    </header>
+    <div class="clearfix container">
+        <div style="padding: 10px; margin-bottom: 10px; border: 2px solid #333333; border-radius: 10px; background-color: #fff;">
+            <h2 class="text-center"><span style="font-weight:bold;"><span style="background: linear-gradient(transparent 80%, #fff 80%);"></span></span>
+            </h2>
+
+            <div class="image__container">
+                <img src="../assets/images/mysteryImg/nazoFinal.png" alt="ほげふげ">
+            </div>
+            <section class="section">
+                <input type="text" id="anser">
+            </section>
+            <button id="btn" class="btn">送信</button>
+        </div>
+        <script type="text/javascript">
+            btn.addEventListener("click", e => {
+                const anser = document.getElementById("anser").value;
+                if (anser == "dead") {
+                    location.href = './finalQuestion-2.html'
+                } else if (anser == "true") {
+
+                    location.href = './trueEndingNovel.html'
+                } else {
+                    alert("反応がない。どうやら答えが違うようだ！")
+                }
+
+            });
+        </script>
+        </p>
+        <h2 class="text-center"><a href="hint.html">ヒントをみる</a></h2>
+    </div>
+    <p></p>
+    </div>
+
+</body>
+
+</html>
