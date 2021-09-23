@@ -5,12 +5,12 @@ const provision = function() {
     shine3 = new Shine(nameBox, blackback, invisible, invisible, invisible, "......うん、つながってるみたい。")
     shine4 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "間に合ってよかった。いきなりごめんね。わたしはモネ。")
     shine5 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "きみのパソコンとわたし自身を守るためにやってきたAIなんだ。")
-    shine6 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "さっきのは、わたしを追ってきた■■■・■■の仕業。")
-    shine7 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "■■■・■■はさっきみたいな感じで、<br>パソコンに■■■■を感染させて、データを■ってしまうの。")
-    shine8 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "わたしは■■■・■■から<ruby>逃<rt>に</rt></ruby>げてくるのがやっとで…<br>この通り、■■■・■■に関して話そうとすると暗号化されてしまうの。")
+    shine6 = new Shine(moneNameBox, moneMozaiku, invisible, mone_mozaiku, invisible, "さっきのは、わたしを追ってきた■■■・■■の仕業。")
+    shine7 = new Shine(moneNameBox, moneMozaiku, invisible, mone_mozaiku, invisible, "■■■・■■はさっきみたいな感じで、<br>パソコンに■■■■を感染させて、データを■ってしまうの。")
+    shine8 = new Shine(moneNameBox, moneMozaiku, invisible, mone_mozaiku, invisible, "わたしは■■■・■■から<ruby>逃<rt>に</rt></ruby>げてくるのがやっとで…<br>この通り、■■■・■■に関して話そうとすると暗号化されてしまうの。")
     shine9 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "だからまず、きみにはわたしの暗号化のロックを外すために、<br>この問題を解いてほしいんだ。")
-    shine10 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "そしたら、■■■・■■について教えられるから。")
-    shine11 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "調べればわたしでも分かるけど……今はそれもできなくて。")
+    shine10 = new Shine(moneNameBox, moneMozaiku, invisible, mone_mozaiku, invisible, "そしたら、■■■・■■について教えられるから。")
+    shine11 = new Shine(moneNameBox, moneMozaiku, invisible, mone_ai, invisible, "調べればわたしでも分かるけど……今はそれもできなくて。")
     shine12 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "わたしたちAIは、何でも知っているようで、<br>本当はインターネットから集めたデータをうまく活用しているだけ。")
     shine13 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "こうやってロックをかけられたら、<br>分かるものも分からなくなっちゃうんだ。")
     shine14 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "だから、きみの力が必要なの。<br>人間であるきみなら、わたしにはできないことができるから。")
@@ -37,9 +37,11 @@ const mone_Right = "../assets/images/charaImg/-min.png"
 const mone_Shadow = "../assets/images/charaImg/12-min.png"
 const mone_ki = "../assets/images/charaImg/31-min.png"
 const mone_do = "../assets/images/charaImg/61-min.png"
-const mone_ai = "../assets/images/charaImg/71-min.png"
+const mone_ai = "../assets/images/charaImg/41-min.png"
+const mone_ai2 = "../assets/images/charaImg/71-min.png"
 const mone_sinken = "../assets/images/charaImg/51-min.png"
 const mone_zensin = "../assets/images/charaImg/モネ＿標準_明.png"
+const mone_mozaiku = "../assets/images/charaImg/mone-2.png"
 
 
 //クレイグー差分

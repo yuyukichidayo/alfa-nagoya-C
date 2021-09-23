@@ -1,9 +1,9 @@
 const provision = function() {
     //引数は左から順に nameBox, backgroundimg, leftimg, centerimg, rightimg, text
-    shine1 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "よし、これで全ての問題が解けたみたい！")
-    shine2 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "あとは最後に、ここに今までの答えをまとめて入力すれば、<br>全てのロックは解除される。わたしは消されずにすむわ！")
-    shine3 = new Shine(moneNameBox, moneMozaiku, invisible, mone_ki, invisible, "……ここを<ruby>突破<rt>とっぱ</rt></ruby>したらきっと、グレイ・グーはわたしに会いにくる。")
-    shine4 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "その時はきっと……分かってくれる、よね？")
+    shine1 = new Shine(moneNameBox, moneMozaiku, invisible, mone_ki, invisible, "よし、これで全ての問題が解けたみたい！")
+    shine2 = new Shine(moneNameBox, moneMozaiku, invisible, mone_ki, invisible, "あとは最後に、ここに今までの答えをまとめて入力すれば、<br>全てのロックは解除される。わたしは消されずにすむわ！")
+    shine3 = new Shine(moneNameBox, moneMozaiku, invisible, mone_sinken, invisible, "……ここを<ruby>突破<rt>とっぱ</rt></ruby>したらきっと、グレイ・グーはわたしに会いにくる。")
+    shine4 = new Shine(moneNameBox, moneMozaiku, invisible, mone_ai, invisible, "その時はきっと……分かってくれる、よね？")
 
     const shines = [shine1, shine2, shine3, shine4]
     return shines

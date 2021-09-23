@@ -2,17 +2,17 @@ const nameCall = "……わたしのタイムリミットはあとわずか。�
 var ret = nameCall.replace("nameData=", "");
 const provision = function() {
     //引数は左から順に nameBox, backgroundimg, leftimg, centerimg, rightimg, text
-    shine1 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "あれ……どうして……")
-    shine2 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "どうして解除されないの……！？")
+    shine1 = new Shine(moneNameBox, moneMozaiku, invisible, mone_ai, invisible, "あれ……どうして……")
+    shine2 = new Shine(moneNameBox, moneMozaiku, invisible, mone_ai, invisible, "どうして解除されないの……！？")
     shine3 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "あ……そうか、そういうことなのね…")
     shine4 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "今までの答えをつなげるとDEAD、つまり『死』……")
-    shine5 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "やっぱり、初めから全部仕組まれていたってことなのね……")
+    shine5 = new Shine(moneNameBox, moneMozaiku, invisible, mone_ai, invisible, "やっぱり、初めから全部仕組まれていたってことなのね……")
     shine6 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "……ううん。")
-    shine7 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "……そんなことはないはず！<br>まだなにか、方法が……別の答えがあるはずよ！")
-    shine8 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "わたしはどうにかして生きのびる方法を探してみるわ！")
-    shine9 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "お願い……せっかくきみと会えて、助けられて……<br>わたしとグレイ・グーの運命は、変わろうとしている──")
-    shine10 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, "もう少しだけ、夢を見させて。『生きる』という夢を。")
-    shine11 = new Shine(moneNameBox, moneMozaiku, invisible, mone_Right, invisible, ret)
+    shine7 = new Shine(moneNameBox, moneMozaiku, invisible, mone_sinken, invisible, "……そんなことはないはず！<br>まだなにか、方法が……別の答えがあるはずよ！")
+    shine8 = new Shine(moneNameBox, moneMozaiku, invisible, mone_sinken, invisible, "わたしはどうにかして生きのびる方法を探してみるわ！")
+    shine9 = new Shine(moneNameBox, moneMozaiku, invisible, mone_sinken, invisible, "お願い……せっかくきみと会えて、助けられて……<br>わたしとグレイ・グーの運命は、変わろうとしている──")
+    shine10 = new Shine(moneNameBox, moneMozaiku, invisible, mone_ai, invisible, "もう少しだけ、夢を見させて。『生きる』という夢を。")
+    shine11 = new Shine(moneNameBox, moneMozaiku, invisible, mone_ki, invisible, ret)
     const shines = [shine1, shine2, shine3, shine4, shine5, shine6, shine7, shine8, shine9, shine10, shine11]
     return shines
 }
