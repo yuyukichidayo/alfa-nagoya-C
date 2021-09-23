@@ -135,7 +135,7 @@ function main() {
 function clickExecution() {
     if (count > shines.length) {
         //飛ばしたいリンクへ
-        location.href = "../STEP3/STEP3.html";
+        location.href = "../ed.html";
     }
     //8の部分をshineの数にしてください
     count++
@@ -162,7 +162,7 @@ document.body.addEventListener('keydown',
     event => {
         if (count > shines.length) {
             //飛ばしたいリンクへ
-            location.href = "../STEP3/STEP3.html";
+            location.href = "../ed.html";
         }
         if (event.key === 'ArrowRight') {
             count++
