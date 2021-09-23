@@ -111,8 +111,6 @@ function shineexecution(shine) {
     textMessage(shine.text)
 }
 
-const shines = provision();
-
 function main() {
     shineexecution(shines[0]);
 }
