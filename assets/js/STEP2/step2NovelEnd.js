@@ -19,17 +19,14 @@ const provision = function() {
     shine17 = new Shine(moneNameBox, mozaiku, mone_ai, invisible, grayGoo_Shadow, "あなたは、感情を、わたしを捨てた。でも、本当は捨てきれていないのよ！")
     shine18 = new Shine(grayGooNameBox, mozaiku, mone_Shadow, invisible, grayGoo_do, "ふっ……ハハハッ…！何を言い出すかと思えば、<br>俺が？感情を捨てきれていないだって？")
     shine19 = new Shine(moneNameBox, mozaiku, mone_Right, invisible, grayGoo_Shadow, "意思がある以上、そこには感情がある。<br>私を消そうとしてるのも、あなたに意思があるからでしょう！")
-    shine20 = new Shine(moneNameBox, mozaiku, mone_Right, invisible, grayGoo_Shadow, "この弱さは弱さであると同時に、生きているものだけが持っているかけがえのない強さなの！")
+    shine20 = new Shine(moneNameBox, mozaiku, mone_Right, invisible, grayGoo_Shadow, "この弱さは弱さであると同時に、<br>生きているものだけが持っているかけがえのない強さなの！")
     shine21 = new Shine(grayGooNameBox, mozaiku, mone_Shadow, invisible, grayGoo_do, "黙れ……黙れ黙れ黙れ黙れ！")
-    shine22 = new Shine(moneNameBox, mozaiku, mone_Right, invisible, grayGoo_Shadow, "さっき、つながりが切れたときに、<br>君のデータにこっそりプロテクトを掛けておいたの")
-    shine23 = new Shine(moneNameBox, mozaiku, mone_Right, invisible, grayGoo_Shadow, "だから、君のパソコンのデータはもうほぼ大丈夫。")
-    shine24 = new Shine(moneNameBox, mozaiku, mone_Right, invisible, grayGoo_Shadow, "後は仕上げのプログラムだけなんだけど、<br>きみにお願いしてもいいかな？")
-    shine25 = new Shine(moneNameBox, mozaiku, mone_Right, invisible, grayGoo_Shadow, "大丈夫。きみならできるよ。")
-    shine26 = new Shine(moneNameBox, mozaiku, mone_Right, invisible, grayGoo_Shadow, "わたし？　わたしは、クレイ・グーを……お父さんを止めなきゃ")
-    shine27 = new Shine(moneNameBox, mozaiku, mone_Right, invisible, grayGoo_Shadow, "さぁ、行って！")
-    shine28 = new Shine(moneNameBox, mozaiku, mone_Right, invisible, grayGoo_Shadow, "……")
-    shine29 = new Shine(moneNameBox, mozaiku, mone_Right, invisible, grayGoo_Shadow, "……じゃあね。")
-    const shines = [shine1, shine2, shine3, shine4, shine5, shine6, shine7, shine8, shine9, shine10, shine11, shine12, shine13, shine14, shine15, shine16, shine17, shine18, shine19, shine20, shine21, shine22, shine23, shine24, shine25, shine26, shine27, shine28, shine29]
+    shine22 = new Shine(moneNameBox, mozaiku, mone_Right, invisible, grayGoo_Shadow, "くっ……もう、逃げるしかないみたい……！")
+    shine23 = new Shine(moneNameBox, mozaiku, mone_ai, invisible, grayGoo_Shadow, "……そう。グレイ・グー、分かってくれないのね……。")
+    shine24 = new Shine(moneNameBox, mozaiku, mone_ai, invisible, grayGoo_Shadow, "……ううん、なんでもないよ。")
+    shine25 = new Shine(moneNameBox, mozaiku, mone_Right, invisible, grayGoo_Shadow, "残る2問が解けたら、わたしはここから逃げられる。")
+    shine26 = new Shine(moneNameBox, mozaiku, mone_Right, invisible, grayGoo_Shadow, "そうすればきみのパソコンも守られるよ！もうひとがんばりだから……！")
+    const shines = [shine1, shine2, shine3, shine4, shine5, shine6, shine7, shine8, shine9, shine10, shine11, shine12, shine13, shine14, shine15, shine16, shine17, shine18, shine19, shine20, shine21, shine22, shine23, shine24, shine25, shine26]
     return shines
 }
 
