@@ -143,7 +143,7 @@ document.body.addEventListener('keydown',
     event => {
         if (count > shines.length) {
             //飛ばしたいリンクへ
-            location.href = "../Ending/finalQuestion.html";
+            location.href = "../main.html";
         }
         if (event.key === 'ArrowRight') {
             count++

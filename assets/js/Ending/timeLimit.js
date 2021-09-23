@@ -33,6 +33,6 @@ window.onload = timerId()
 
 
 function timerId() {
-    setInterval(() => alterLife(-1.6), 1000);
+    setInterval(() => alterLife(-0.5), 1000);
     console.log("カウント開始")
 }

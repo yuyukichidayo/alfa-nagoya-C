@@ -32,7 +32,7 @@ input {
     transform: translate(-50%, -50%);
 }
 
-.parent {
+.parent2 {
     position: relative;
     height: 200px;
 }
@@ -758,4 +758,83 @@ button {
 .cp_ipselect.cp_sl01 select {
     padding: 8px 38px 8px 8px;
     color: #666666;
+}
+
+
+/* ここからnovel部分 */
+
+
+/* ここからnovel部分 */
+
+
+/* ここからnovel部分 */
+
+
+/* ここからnovel部分 */
+
+#parent {
+    width: 1350px;
+    height: 200px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+#nameBox {
+    position: absolute;
+    top: 33%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+#textBox {
+    width: 1350px;
+    height: 240px;
+    visibility: hidden;
+}
+
+#textMessage {
+    width: 1300px;
+    height: 46px;
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: black;
+    text-align: left;
+    visibility: hidden;
+}
+
+#leftimg {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+#centerimg {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+#rightimg {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
 }

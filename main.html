@@ -7,17 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/mainNovel.css">
 
     <title>グレイグーからの挑戦</title>
 </head>
 
-<body style="background-color: white;">
+<body style="background-color: white;" id="backgroundimgplace" style="position: relative;" onload="main()">
 
-    <div id="parent">
+    <div id="parent2">
         <h1 id="title">グレイグーからの挑戦</h1>
         <input required="required" type="text" id="nameInput" placeholder="あなたのなまえを入力してください♪">
         <button id="btn" class="btn btn--orange btn--radius">PUSH</button>
     </div>
+
     <img src="assets/images/main/errorimg.png" id="error1" alt="errorImg">
     <img src="assets/images/main/errorimg.png" id="error2" alt="errorImg">
     <img src="assets/images/main/errorimg.png" id="error3" alt="errorImg">
@@ -29,7 +31,15 @@
         <h1 id="timer"></h1>
         <p id="name"></p>
     </div>
+    <img src="" id="leftimg" alt="leftimg"></img>
+    <img src="" id="centerimg" alt="centerimg"></img>
+    <img src="" id="rightimg" alt="rightimg"></img>
+    <div id="parent">
+        <img id="textBox" alt="">
+        <p id="textMessage"></p>
+    </div>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/Ending/mainNovel.js"></script>
 </body>
 
 
