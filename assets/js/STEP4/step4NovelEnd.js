@@ -9,6 +9,7 @@ const provision = function() {
     return shines
 }
 
+
 //ネームボックス一覧
 const moneNameBox = "../assets/images/itemImg/サイバーフレーム_モ.png"
 const grayGooNameBox = "../assets/images/itemImg/サイバーフレーム_グ.png"
@@ -32,14 +33,14 @@ const mone_ai = "../assets/images/charaImg/モネ哀-min.png"
 //クレイグー差分
 const grayGoo_Right = "../assets/images/charaImg/グレイグー_通常_明.png"
 const grayGoo_Shadow = "../assets/images/charaImg/グレイグー_通常_暗.png"
-const grayGoo_ki = "../assets/images/charaImg/喜１-min.png"
+const grayGoo_ki = "../assets/images/charaImg/楽１-min.png"
 const grayGoo_do = "../assets/images/charaImg/怒-min.png"
 const grayGoo_ai = "../assets/images/charaImg/哀-min.png"
-
 
 //小道具＆SE一覧
 const invisible = "../assets/images/itemImg/null.png"
 const bag = "../assets/images/itemImg/kaban_kirei.png"
+
 
 
 class Shine {
